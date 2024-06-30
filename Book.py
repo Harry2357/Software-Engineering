@@ -11,6 +11,7 @@ class Book:
     # Verify that the category is 'valid' (Data Validation)
     def setCategory(self, category):
         # non-fiction, fiction, reference
+        category = category.lower()
         if category in ['non-fiction', 'fiction', 'reference']:
             self.__category = category
         else:
